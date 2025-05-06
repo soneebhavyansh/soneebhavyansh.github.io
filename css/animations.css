@@ -1,0 +1,389 @@
+/*
+ * Animations Stylesheet
+ * Author: John Doe
+ * Description: CSS animations and transitions for personal website
+ */
+
+/* ===== ANIMATION KEYFRAMES ===== */
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Slide In Left Animation */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Slide In Right Animation */
+@keyframes slideInRight {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Slide In Up Animation */
+@keyframes slideInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Scale In Animation */
+@keyframes scaleIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Rotate Animation */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Text Reveal Animation */
+@keyframes textReveal {
+    from {
+        clip-path: inset(0 100% 0 0);
+    }
+    to {
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+/* Float Animation */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Shake Animation */
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-5px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(5px);
+    }
+}
+
+/* ===== ANIMATION CLASSES ===== */
+
+/* Fade In Animation */
+.fade-in {
+    animation: fadeIn 1s ease forwards;
+}
+
+/* Staggered Fade In for Navigation Items */
+.fade-in-staggered > * {
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.fade-in-staggered > *:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.fade-in-staggered > *:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.fade-in-staggered > *:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.fade-in-staggered > *:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+/* Slide In Animations */
+.slide-in-left {
+    opacity: 0;
+    animation: slideInLeft 1s ease forwards;
+}
+
+.slide-in-right {
+    opacity: 0;
+    animation: slideInRight 1s ease forwards;
+}
+
+.slide-in-up {
+    opacity: 0;
+    animation: slideInUp 1s ease forwards;
+}
+
+/* Scale In Animation */
+.scale-in {
+    opacity: 0;
+    animation: scaleIn 0.8s ease forwards;
+}
+
+/* Pulse Animation */
+.pulse {
+    animation: pulse 2s ease infinite;
+}
+
+/* Bounce Animation */
+.bounce {
+    animation: bounce 2s ease infinite;
+}
+
+/* Rotate Animation */
+.rotate {
+    animation: rotate 10s linear infinite;
+}
+
+/* Float Animation */
+.float {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Hover Animations */
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+
+.hover-rotate {
+    transition: transform 0.3s ease;
+}
+
+.hover-rotate:hover {
+    transform: rotate(5deg);
+}
+
+.hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Reveal Animations on Scroll */
+.reveal-element {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal-element.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Staggered Reveal Animation */
+.staggered-reveal > * {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.staggered-reveal.revealed > *:nth-child(1) {
+    transition-delay: 0.1s;
+}
+
+.staggered-reveal.revealed > *:nth-child(2) {
+    transition-delay: 0.2s;
+}
+
+.staggered-reveal.revealed > *:nth-child(3) {
+    transition-delay: 0.3s;
+}
+
+.staggered-reveal.revealed > *:nth-child(4) {
+    transition-delay: 0.4s;
+}
+
+.staggered-reveal.revealed > *:nth-child(5) {
+    transition-delay: 0.5s;
+}
+
+.staggered-reveal.revealed > * {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Button Animations */
+.primary-btn, .secondary-btn, .submit-btn, .project-link {
+    position: relative;
+    overflow: hidden;
+}
+
+.primary-btn::after, .secondary-btn::after, .submit-btn::after, .project-link::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s ease, height 0.6s ease;
+    z-index: -1;
+}
+
+.primary-btn:hover::after, .secondary-btn:hover::after, .submit-btn:hover::after, .project-link:hover::after {
+    width: 300px;
+    height: 300px;
+}
+
+/* Card Animations */
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-secondary) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.project-card:hover::before {
+    opacity: 0.05;
+}
+
+/* Theme Transition */
+.theme-transition {
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Page Transition */
+.page-transition {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-primary);
+    z-index: 9999;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease;
+}
+
+.page-transition.exit {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.page-transition.enter {
+    transform: scaleX(1);
+    transform-origin: right;
+    transition-delay: 0.5s;
+}
+
+/* Typing Animation */
+.typing-cursor {
+    display: inline-block;
+    width: 3px;
+    height: 1em;
+    background-color: var(--text-primary);
+    margin-left: 2px;
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    from, to { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* Mobile Menu Animation */
+.menu-open .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.menu-open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-open .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Responsive Animation Adjustments */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

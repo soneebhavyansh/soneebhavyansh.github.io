@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhavyansh Soni | Personal Website</title>
+    <meta name="description" content="Personal website of Bhavyansh Soni - Developer, Designer, Creator">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <!-- Preload fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="light-theme">
+    <div class="page-wrapper">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo fade-in">
+                <span class="logo-text">Bhavyansh Soni</span>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-list fade-in-staggered">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="theme-toggle fade-in">
+                <button id="theme-toggle-btn" aria-label="Toggle dark mode">
+                    <svg class="sun-icon" viewBox="0 0 24 24" width="24" height="24">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <section id="home" class="hero-section">
+                <div class="hero-content">
+                    <div class="hero-text slide-in-left">
+                        <h1 class="hero-title">Hello, I'm <span class="highlight">Bhavyansh Soni</span></h1>
+                        <div class="animated-text-container">
+                            <span class="animated-text">I'm a </span>
+                            <span class="changeable-text" id="typed-text">Developer</span>
+                        </div>
+                        <p class="hero-description">Crafting exceptional digital experiences with creativity and precision from Rajasthan, India.</p>
+                        <div class="hero-cta">
+                            <a href="#projects" class="primary-btn">View My Work</a>
+                            <a href="#skills-section" class="secondary-btn">View My Skills</a>
+                            <a href="#contact" class="code-btn glow-effect">Contact Me <i class="code-icon">@</i></a>
+                        </div>
+                    </div>
+                    <div class="hero-image slide-in-right">
+                        <div class="geometric-shape"></div>
+                    </div>
+                </div>
+                <div class="scroll-indicator">
+                    <span class="scroll-text">Explore</span>
+                    <span class="scroll-arrow"></span>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="about-section">
+                <div class="section-header reveal-element">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-underline"></div>
+                </div>
+                <div class="about-content">
+                    <div class="about-text reveal-element">
+                        <p>I'm a passionate developer and designer with over 4 years of experience creating beautiful, functional web experiences. I have mastered Python programming language and development, building sophisticated applications and automation solutions.</p>
+                        <p>My approach combines technical expertise with creative problem-solving to deliver solutions that exceed expectations. From AI-powered assistants to interactive games, I leverage Python's versatility to create engaging and powerful applications. I believe in continuous learning and staying at the forefront of industry trends.</p>
+                    </div>
+                    <div id="skills-section" class="sliding-cards-container reveal-element">
+                        <div class="sliding-card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <h3>Skills</h3>
+                                    <div class="card-icon">
+                                        <svg viewBox="0 0 24 24" width="48" height="48">
+                                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <ul class="skills-list">
+                                        <li>HTML/CSS/JavaScript</li>
+                                        <li>React & Vue.js</li>
+                                        <li>UI/UX Design</li>
+                                        <li>Responsive Development</li>
+                                        <li>Performance Optimization</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sliding-card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <h3>Experience</h3>
+                                    <div class="card-icon">
+                                        <svg viewBox="0 0 24 24" width="48" height="48">
+                                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                                            <polyline points="7.5 4.21 12 6.81 16.5 4.21"></polyline>
+                                            <polyline points="7.5 19.79 7.5 14.6 3 12"></polyline>
+                                            <polyline points="21 12 16.5 14.6 16.5 19.79"></polyline>
+                                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <ul class="experience-list">
+                                        <li>4+ Years Experience of Frontend Developing</li>
+                                        <li>UI/UE Creative Designer</li>
+                                        <li>Freelance Web Developer</li>
+                                        <li>Open Source Contributor</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sliding-card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <h3>Education</h3>
+                                    <div class="card-icon">
+                                        <svg viewBox="0 0 24 24" width="48" height="48">
+                                            <path d="M22 10v6M2 10v6M17 2H7a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM12 18h.01"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <ul class="education-list">
+                                        <li>Mastered Python</li>
+                                        <li>Advanced Web Development</li>
+                                        <li>Certified Python Developer</li>
+                                        <li>Certificate in UX Design</li>
+                                        <li>Advanced JavaScript Course</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="projects-section">
+                <div class="section-header reveal-element">
+                    <h2 class="section-title">My Projects</h2>
+                    <div class="section-underline"></div>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card reveal-element">
+                        <div class="project-image">
+                            <div class="project-placeholder"></div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">E-Commerce Platform</h3>
+                            <p class="project-description">A full-featured online shopping platform with modern UI and seamless checkout process.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">React</span>
+                            </div>
+                        </div>
+                        <div class="project-hover">
+                            <div class="project-hover-content">
+                                <h3>E-Commerce Platform</h3>
+                                <p>Designed and developed a responsive e-commerce solution featuring product filtering, cart functionality, and secure checkout.</p>
+                                <div class="project-details">
+                                    <span class="project-date">Completed in 2024</span>
+                                    <span class="project-role">Lead Developer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card reveal-element">
+                        <div class="project-image">
+                            <div class="project-placeholder"></div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Portfolio Website</h3>
+                            <p class="project-description">A minimal and modern portfolio for a professional photographer with gallery features.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="project-hover">
+                            <div class="project-hover-content">
+                                <h3>Portfolio Website</h3>
+                                <p>Created an elegant portfolio website with image lazy loading, lightbox gallery, and smooth animations.</p>
+                                <div class="project-details">
+                                    <span class="project-date">Completed in 2023</span>
+                                    <span class="project-role">UI/UX Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card reveal-element">
+                        <div class="project-image">
+                            <div class="project-placeholder"></div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Dashboard UI</h3>
+                            <p class="project-description">An interactive analytics dashboard with data visualization and reporting tools.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Chart.js</span>
+                            </div>
+                        </div>
+                        <div class="project-hover">
+                            <div class="project-hover-content">
+                                <h3>Dashboard UI</h3>
+                                <p>Developed a responsive dashboard interface with interactive charts, custom data filters, and dark/light theme toggle.</p>
+                                <div class="project-details">
+                                    <span class="project-date">Completed in 2023</span>
+                                    <span class="project-role">Frontend Developer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card reveal-element">
+                        <div class="project-image">
+                            <div class="project-placeholder"></div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Landing Page</h3>
+                            <p class="project-description">A high-conversion landing page for a SaaS product with animated illustrations.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">GSAP</span>
+                            </div>
+                        </div>
+                        <div class="project-hover">
+                            <div class="project-hover-content">
+                                <h3>Landing Page</h3>
+                                <p>Designed and implemented a high-performance landing page with parallax scrolling, custom animations, and form validation.</p>
+                                <div class="project-details">
+                                    <span class="project-date">Completed in 2023</span>
+                                    <span class="project-role">Frontend Developer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card reveal-element">
+                        <div class="project-image">
+                            <div class="project-placeholder special-gradient"></div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Jarvis AI Assistant</h3>
+                            <p class="project-description">A voice-controlled AI personal assistant inspired by Iron Man, built with Python and various AI/ML libraries.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Speech Recognition</span>
+                                <span class="tech-tag">NLP</span>
+                                <span class="tech-tag">AI</span>
+                            </div>
+                        </div>
+                        <div class="project-hover">
+                            <div class="project-hover-content">
+                                <h3>Jarvis AI Assistant</h3>
+                                <p>Created an advanced voice-activated AI assistant capable of performing tasks like web searches, playing music, sending emails, and controlling smart home devices.</p>
+                                <div class="project-details">
+                                    <span class="project-date">Completed in 2023</span>
+                                    <span class="project-role">Python Developer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card reveal-element">
+                        <div class="project-image">
+                            <div class="project-placeholder special-gradient-2"></div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Flappy Bird Clone</h3>
+                            <p class="project-description">A Python recreation of the popular Flappy Bird game with custom graphics and physics.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Pygame</span>
+                                <span class="tech-tag">Game Development</span>
+                                <span class="tech-tag">Pixel Art</span>
+                            </div>
+                        </div>
+                        <div class="project-hover">
+                            <div class="project-hover-content">
+                                <h3>Flappy Bird Clone</h3>
+                                <p>Developed a feature-complete clone of the classic Flappy Bird game with customized obstacles, sound effects, and scoring system using Python's Pygame library.</p>
+                                <div class="project-details">
+                                    <span class="project-date">Completed in 2023</span>
+                                    <span class="project-role">Game Developer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card reveal-element">
+                        <div class="project-image">
+                            <div class="project-placeholder special-gradient-3"></div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">AI Image Generator</h3>
+                            <p class="project-description">An AI-powered tool that generates images from text descriptions using deep learning.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Express</span>
+                                <span class="tech-tag">OpenAI API</span>
+                            </div>
+                        </div>
+                        <div class="project-hover">
+                            <div class="project-hover-content">
+                                <h3>AI Image Generator</h3>
+                                <p>Built a responsive web application that leverages machine learning to transform text prompts into unique visual creations.</p>
+                                <div class="project-details">
+                                    <span class="project-date">Completed in 2024</span>
+                                    <span class="project-role">Full Stack Developer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="contact-section">
+                <div class="section-header reveal-element">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="section-underline"></div>
+                </div>
+                <div class="contact-container">
+                    <div class="contact-info reveal-element">
+                        <h3>Let's Connect</h3>
+                        <p>Feel free to reach out for collaboration, questions, or just to say hello. I'm always interested in new projects and opportunities.</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                                <span>+91 98765 43210</span>
+                            </div>
+                            <div class="contact-item">
+                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                                <span>bhavyanshsoni9@gmail.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <span>Rajasthan, India</span>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="GitHub">
+                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="LinkedIn">
+                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Twitter">
+                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-form-container reveal-element">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" class="form-input" required>
+                                <label for="name" class="form-label">Your Name</label>
+                                <span class="form-highlight"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" class="form-input" required>
+                                <label for="email" class="form-label">Your Email</label>
+                                <span class="form-highlight"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="subject" name="subject" class="form-input" required>
+                                <label for="subject" class="form-label">Subject</label>
+                                <span class="form-highlight"></span>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" class="form-input" rows="5" required></textarea>
+                                <label for="message" class="form-label">Your Message</label>
+                                <span class="form-highlight"></span>
+                            </div>
+                            <button type="submit" class="submit-btn">
+                                <span>Send Message</span>
+                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">Bhavyansh Soni</span>
+                </div>
+                <div class="footer-nav">
+                    <ul class="footer-nav-list">
+                        <li class="footer-nav-item"><a href="#home" class="footer-nav-link">Home</a></li>
+                        <li class="footer-nav-item"><a href="#about" class="footer-nav-link">About</a></li>
+                        <li class="footer-nav-item"><a href="#projects" class="footer-nav-link">Projects</a></li>
+                        <li class="footer-nav-item"><a href="#contact" class="footer-nav-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" width="20" height="20">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" width="20" height="20">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <svg viewBox="0 0 24 24" width="20" height="20">
+                            <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" width="20" height="20">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Bhavyansh Soni. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
